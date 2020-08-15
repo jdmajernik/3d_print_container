@@ -4,6 +4,6 @@ MAINTAINER John Majernik <jdmajernik@gmail.com>
 RUN apt-get update\
  && apt-get install -y apt-transport-https\
  && apt-get install -y wget\
- && apt-get install freeglut3\
+ && apt-get install -y freeglut3\
  && rm -rf /var/lib/apt/lists/*
 
