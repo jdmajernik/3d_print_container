@@ -12,6 +12,6 @@ RUN apt-get update\
 # https://dl.slic3r.org/dev/linux/Slic3r-master-latest.AppImage \
 # && chmod u+x /opt/*
 
-RUN 12 5 31 1|apt install slic3r -y
+RUN echo "12 5 31 1"|apt install slic3r -y
 
 RUN rm -rf /var/lib/apt/lists/*
