@@ -2,13 +2,16 @@ FROM ubuntu:20.04
 MAINTAINER John Majernik <jdmajernik@gmail.com>
 
 RUN apt-get update\
- && apt-get install -y apt-transport-https\
- && apt-get install -y wget\
- && apt-get install -y freeglut3\
- && apt-get install -y fuse\
- && rm -rf /var/lib/apt/lists/*
+ && apt-get install -y apt-transport-https
+# && apt-get install -y wget\
+# && apt-get install -y freeglut3\
+# && apt-get install -y fuse\
+# && rm -rf /var/lib/apt/lists/*
 
-RUN wget -O /opt/Slic3r-master-latest.AppImage \
- https://dl.slic3r.org/dev/linux/Slic3r-master-latest.AppImage \
- && chmod u+x /opt/*
+#RUN wget -O /opt/Slic3r-master-latest.AppImage \
+# https://dl.slic3r.org/dev/linux/Slic3r-master-latest.AppImage \
+# && chmod u+x /opt/*
 
+RUN 12 5 31 1|apt install slic3r
+
+RUN rm -rf /var/lib/apt/lists/*
