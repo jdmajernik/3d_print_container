@@ -1,4 +1,5 @@
-FROM alpine:3.12
+FROM archlinux:20200705
+#FROM alpine:3.12
 MAINTAINER John Majernik <jdmajernik@gmail.com>
 
 #RUN apt-get update\
