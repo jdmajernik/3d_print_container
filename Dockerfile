@@ -2,6 +2,9 @@ FROM archlinux:20200705
 #FROM alpine:3.12
 MAINTAINER John Majernik <jdmajernik@gmail.com>
 
+RUN pacman -Sy \
+ && pacman -S prusa-slicer --noconfirm
+
 #RUN apt-get update\
 # && apt-get install -y apt-transport-https
 # && apt-get install -y wget\
