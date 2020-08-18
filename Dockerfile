@@ -5,6 +5,8 @@ MAINTAINER John Majernik <jdmajernik@gmail.com>
 RUN pacman -Sy \
  && pacman -S prusa-slicer --noconfirm
 
+RUN bash
+
 #RUN apt-get update\
 # && apt-get install -y apt-transport-https
 # && apt-get install -y wget\
